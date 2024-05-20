@@ -1,7 +1,6 @@
 name: Generate ASCII Artwork
 
-on:
- push:
+on: push
 
 
 jobs: 
@@ -22,5 +21,5 @@ jobs:
     - name: Test File Exists
       uses: grep -i "dragon" dragon.txt
       
-    - name: checkout Repo Files
+    - name: list Repo Files
       uses: ls -ltra
